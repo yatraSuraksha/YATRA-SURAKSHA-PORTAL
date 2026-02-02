@@ -5,7 +5,7 @@ import { io } from 'socket.io-client'
 import './App.css'
 
 // Socket configuration
-const SERVER_URL = 'https://98.70.26.155:3000'
+const SERVER_URL = 'https://api.yatrasuraksha.n5n.live'
 const SOCKET_URL = `${SERVER_URL}/admin`
 
 // Map style configuration for light theme
@@ -15,7 +15,8 @@ const lightStyle = {
   sources: {
     'osm-tiles': {
       type: 'vector',
-      tiles: ['https://135.235.138.50/planettiles/{z}/{x}/{y}.mvt'],
+      // tiles: ['http://135.235.138.50:80/planettiles/{z}/{x}/{y}.mvt'],
+      tiles: ['https://maps.osm.n5n.live/planettiles/{z}/{x}/{y}.mvt'],
       maxzoom: 14
     }
   },
@@ -273,7 +274,7 @@ const darkStyle = {
   sources: {
     'osm-tiles': {
       type: 'vector',
-      tiles: ['https://135.235.138.50/planettiles/{z}/{x}/{y}.mvt'],
+      tiles: ['https://maps.osm.n5n.live:8080/planettiles/{z}/{x}/{y}.mvt'],
       maxzoom: 14
     }
   },
@@ -497,7 +498,7 @@ const satelliteStyle = {
   sources: {
     'osm-tiles': {
       type: 'vector',
-      tiles: ['https://135.235.138.50/planettiles/{z}/{x}/{y}.mvt'],
+      tiles: ['https://maps.osm.n5n.live/planettiles/{z}/{x}/{y}.mvt'],
       maxzoom: 14
     }
   },
@@ -526,7 +527,7 @@ const terrainStyle = {
   sources: {
     'osm-tiles': {
       type: 'vector',
-      tiles: ['https://135.235.138.50/planettiles/{z}/{x}/{y}.mvt'],
+      tiles: ['https://maps.osm.n5n.live/planettiles/{z}/{x}/{y}.mvt'],
       maxzoom: 14
     }
   },
@@ -555,7 +556,7 @@ const oceanStyle = {
   sources: {
     'osm-tiles': {
       type: 'vector',
-      tiles: ['https://135.235.138.50/planettiles/{z}/{x}/{y}.mvt'],
+      tiles: ['https://maps.osm.n5n.live/planettiles/{z}/{x}/{y}.mvt'],
       maxzoom: 14
     }
   },
@@ -584,7 +585,7 @@ const midnightStyle = {
   sources: {
     'osm-tiles': {
       type: 'vector',
-      tiles: ['https://135.235.138.50/planettiles/{z}/{x}/{y}.mvt'],
+      tiles: ['https://maps.osm.n5n.live/planettiles/{z}/{x}/{y}.mvt'],
       maxzoom: 14
     }
   },
@@ -613,7 +614,7 @@ const vintageStyle = {
   sources: {
     'osm-tiles': {
       type: 'vector',
-      tiles: ['https://135.235.138.50/planettiles/{z}/{x}/{y}.mvt'],
+      tiles: ['https://maps.osm.n5n.live/planettiles/{z}/{x}/{y}.mvt'],
       maxzoom: 14
     }
   },
@@ -3379,7 +3380,7 @@ function App() {
         <div className="loading-overlay">
           <div className="loading-spinner"></div>
           <p>Loading Map Tiles...</p>
-          <p className="loading-detail">Connecting to tile server at 135.235.138.50</p>
+          <p className="loading-detail">Connecting to tile server at maps.osm.n5n.live</p>
         </div>
       )}
 
