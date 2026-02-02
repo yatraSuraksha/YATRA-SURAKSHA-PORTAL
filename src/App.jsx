@@ -5,7 +5,7 @@ import { io } from 'socket.io-client'
 import './App.css'
 
 // Socket configuration
-const SERVER_URL = 'http://98.70.26.155:3000'
+const SERVER_URL = 'https://98.70.26.155:3000'
 const SOCKET_URL = `${SERVER_URL}/admin`
 
 // Map style configuration for light theme
@@ -15,7 +15,7 @@ const lightStyle = {
   sources: {
     'osm-tiles': {
       type: 'vector',
-      tiles: ['http://135.235.138.50/planettiles/{z}/{x}/{y}.mvt'],
+      tiles: ['https://135.235.138.50/planettiles/{z}/{x}/{y}.mvt'],
       maxzoom: 14
     }
   },
@@ -273,7 +273,7 @@ const darkStyle = {
   sources: {
     'osm-tiles': {
       type: 'vector',
-      tiles: ['http://135.235.138.50/planettiles/{z}/{x}/{y}.mvt'],
+      tiles: ['https://135.235.138.50/planettiles/{z}/{x}/{y}.mvt'],
       maxzoom: 14
     }
   },
@@ -497,7 +497,7 @@ const satelliteStyle = {
   sources: {
     'osm-tiles': {
       type: 'vector',
-      tiles: ['http://135.235.138.50/planettiles/{z}/{x}/{y}.mvt'],
+      tiles: ['https://135.235.138.50/planettiles/{z}/{x}/{y}.mvt'],
       maxzoom: 14
     }
   },
@@ -526,7 +526,7 @@ const terrainStyle = {
   sources: {
     'osm-tiles': {
       type: 'vector',
-      tiles: ['http://135.235.138.50/planettiles/{z}/{x}/{y}.mvt'],
+      tiles: ['https://135.235.138.50/planettiles/{z}/{x}/{y}.mvt'],
       maxzoom: 14
     }
   },
@@ -555,7 +555,7 @@ const oceanStyle = {
   sources: {
     'osm-tiles': {
       type: 'vector',
-      tiles: ['http://135.235.138.50/planettiles/{z}/{x}/{y}.mvt'],
+      tiles: ['https://135.235.138.50/planettiles/{z}/{x}/{y}.mvt'],
       maxzoom: 14
     }
   },
@@ -584,7 +584,7 @@ const midnightStyle = {
   sources: {
     'osm-tiles': {
       type: 'vector',
-      tiles: ['http://135.235.138.50/planettiles/{z}/{x}/{y}.mvt'],
+      tiles: ['https://135.235.138.50/planettiles/{z}/{x}/{y}.mvt'],
       maxzoom: 14
     }
   },
@@ -613,7 +613,7 @@ const vintageStyle = {
   sources: {
     'osm-tiles': {
       type: 'vector',
-      tiles: ['http://135.235.138.50/planettiles/{z}/{x}/{y}.mvt'],
+      tiles: ['https://135.235.138.50/planettiles/{z}/{x}/{y}.mvt'],
       maxzoom: 14
     }
   },
